@@ -35,7 +35,7 @@ public class GetGifts : MonoBehaviour
         {
             Destroy(other.gameObject);
             score +=1;
-            scoreText.text = Mathf.Ceil(score).ToString();
+            scoreText.text = "Score: " + Mathf.Ceil(score).ToString();
             SpawnGift();
             
         }
