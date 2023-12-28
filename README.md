@@ -52,6 +52,31 @@ Welcome to **Zombie Gift Chase: School of Surprises**, our final project for the
     - Activate your in-game camera with the press of a button (O), allowing real-time self-view on interactive boards. Deactivate the camera with another button (P).
 - **Voice Recording:**
     - Record your voice by pressing 'R' near the interactive boards, enabling message sharing and unique in-game experiences.
+- **Voice Recognition:**
+    - Hold down the 'L' key to activate voice recognition, adding an extra layer of interactivity.
+     
+## Sensors:
+
+- **FPS Sensor:**
+  - Monitor Frames Per Second (FPS) to ensure smooth gameplay.
+
+- **Score Sensor:**
+  - Keep track of the player's score as they collect presents in both day and night modes.
+
+- **Time Sensor:**
+  - Record the elapsed time in both day and night modes, providing players with a time-based challenge.
+
+- **HP Sensor:**
+  - Track the player's health points (HP) during night mode when facing the skeleton.
+
+## Voice-Activated Skeleton Behavior:
+
+- **Voice Command: "STOP":**
+  - In response to the voice command "STOP," the skeleton stops pursuing the player.
+  - The skeleton remains stationary, visibly frustrated, and taps its foot in place.
+
+- **Voice Command: "MOVE":**
+  - In response to the voice command "MOVE," the skeleton resumes its pursuit, following the player's movements.
 
 ## Enhanced Player Controls:
 - Quick Run: Speed up movement by pressing the Shift key.
