@@ -4,13 +4,15 @@ using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(AudioSource))]
-public class BotFollowPlayer : MonoBehaviour
+public class Bot : MonoBehaviour
 {
     public Transform player;
     public GameObject playerObj;
     private NavMeshAgent navMeshAgent;
     private AudioSource audioSource;
     private bool canPlayAudio = true;
+
+    public bool stop = false;
 
     void Start()
     {
@@ -29,7 +31,7 @@ public class BotFollowPlayer : MonoBehaviour
 
     void Update()
     {
-        if (player != null)
+        if (!stop && player != null)
         {
             // Update the destination to follow the player
             navMeshAgent.SetDestination(player.position);

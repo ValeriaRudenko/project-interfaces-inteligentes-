@@ -10,6 +10,8 @@ public class GetGifts : MonoBehaviour
     public GameObject gift1;
     public GameObject gift2;
     public TextMeshProUGUI scoreText;
+    public AudioSource giftAudio;
+   
 
     public int count = 50;
     void Start(){
@@ -37,7 +39,7 @@ public class GetGifts : MonoBehaviour
             score +=1;
             scoreText.text = "Score: " + Mathf.Ceil(score).ToString();
             SpawnGift();
-            
+            giftAudio.Play();
         }
     }
 }
