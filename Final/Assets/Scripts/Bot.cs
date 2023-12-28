@@ -1,17 +1,22 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(AudioSource))]
 public class BotFollowPlayer : MonoBehaviour
 {
     public Transform player;
+    public GameObject playerObj;
     private NavMeshAgent navMeshAgent;
+    private AudioSource audioSource;
+    private bool canPlayAudio = true;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+
         if (player == null)
         {
             Debug.LogError("Player not assigned to the bot!");
@@ -38,6 +43,10 @@ public class BotFollowPlayer : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Player") && canPlayAudio)
+        {
+            StartCoroutine(PlayAudioWithCooldown());
+        }
         // Check if the bot collided with an obstacle
         if (!collision.gameObject.CompareTag("Floor"))
         {
@@ -50,5 +59,16 @@ public class BotFollowPlayer : MonoBehaviour
             // Set the new destination for the NavMeshAgent
             navMeshAgent.SetDestination(hit.position);
         }
+    }
+
+    IEnumerator PlayAudioWithCooldown()
+    {
+        canPlayAudio = false;
+        audioSource.Play();
+        playerObj.GetComponent<HitPoints>().hp -= 20;
+        // Wait for 2 seconds before allowing audio to be played again
+        yield return new WaitForSeconds(2.0f);
+
+        canPlayAudio = true;
     }
 }
