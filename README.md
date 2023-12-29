@@ -33,7 +33,8 @@ The school is in the forest, you cannot go there, but you can see this forest fr
     - Collect presents scattered throughout the school. 
     - Presents dynamically generate, creating a continuous challenge for players. 
     - A counter keeps track of the collected presents.
-
+ Here you can see how to play in a day mode:   
+![Game Play Day Mode](images/Day.mp4)
 - **Night Mode:** 
     - Brace yourself for a spine-chilling experience as a relentless skeleton hunts you down while you attempt to collect presents. 
     Here you can see how the skeleton looks like.
