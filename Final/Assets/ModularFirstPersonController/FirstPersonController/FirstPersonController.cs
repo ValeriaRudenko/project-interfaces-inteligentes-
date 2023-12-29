@@ -197,13 +197,20 @@ public class FirstPersonController : MonoBehaviour
 
         #endregion
     }
-
+    private void ToggleCursorLock()
+    {
+        Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked) ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = (Cursor.lockState == CursorLockMode.Locked) ? false : true;
+    }
     float camRotation;
 
     private void Update()
     {
         #region Camera
-
+        if (Input.GetKeyDown(KeyCode.P))
+            {
+                ToggleCursorLock(); // Call the method to toggle cursor lock
+            }
         // Control camera movement
         if(cameraCanMove)
         {
