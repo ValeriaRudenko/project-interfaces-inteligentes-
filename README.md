@@ -8,7 +8,8 @@
 ## Introduction
 
 Welcome to **Zombie Gift Chase: School of Surprises**, our final project for the Intelligent Interfaces course. This Unity-based game promises a unique and thrilling experience set in a school environment, where surprises await at every turn.
-
+This is the menu of our game:
+![Menu](images/menu.png)
 
 ## Technical details
 - **Unity version:** [2022.3.15f1]
@@ -22,6 +23,11 @@ Welcome to **Zombie Gift Chase: School of Surprises**, our final project for the
 ## Preliminary prototype of the school
 ![Prototype](images/school_design.jpg)
 
+## How the game is looks like
+The school is in the forest, you cannot go there, but you can see this forest from the school window like on the pictures below. 
+![Forest](images/forest.png)
+![Window](images/window.png)
+
  ## Day and night modes
  - **Day Mode:**
     - Collect presents scattered throughout the school. 
@@ -30,7 +36,11 @@ Welcome to **Zombie Gift Chase: School of Surprises**, our final project for the
 
 - **Night Mode:** 
     - Brace yourself for a spine-chilling experience as a relentless skeleton hunts you down while you attempt to collect presents. 
+    Here you can see how the skeleton looks like.
+    ![Skeleton](images/skeleton.png)
     - You start with 100 lives, and the game ends if you lose them all.
+    If you died you will see such menu:
+    ![Menu](images/menu_lost.png)
 
 - **Skeleton Animation and Sound:**
   - The skeleton features animations for idle and walking.
@@ -39,6 +49,8 @@ Welcome to **Zombie Gift Chase: School of Surprises**, our final project for the
 
   **Player Interactions:**
   - When the player collects gifts, a sound effect is triggered, providing audio feedback for successful interactions.
+  On this picture you can see how the gifts looks like in night mode.
+  ![Gift](images/gifts.png)
   
   **Audio Feedback:**
   - Experience the game's intensity through immersive sound effects.
