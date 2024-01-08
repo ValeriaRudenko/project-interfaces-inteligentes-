@@ -1,4 +1,4 @@
-# Zombie Gift Chase: School of Surprises
+# Skeleton Gift Chase: School of Surprises
 
 ## Final project for the course Inteligent interfaces
 ## Developed by:
