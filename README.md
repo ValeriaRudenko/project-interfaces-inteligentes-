@@ -1,4 +1,4 @@
-# Zombie Gift Chase: School of Surprises
+# Skeleton Gift Chase: School of Surprises
 
 ## Final project for the course Inteligent interfaces
 ## Developed by:
@@ -33,7 +33,8 @@ The school is in the forest, you cannot go there, but you can see this forest fr
     - Collect presents scattered throughout the school. 
     - Presents dynamically generate, creating a continuous challenge for players. 
     - A counter keeps track of the collected presents.
-
+    - Here you can see how to play in a day mode:   
+![Play Day Mode](images/Day.mp4)
 - **Night Mode:** 
     - Brace yourself for a spine-chilling experience as a relentless skeleton hunts you down while you attempt to collect presents. 
     Here you can see how the skeleton looks like.
@@ -41,6 +42,8 @@ The school is in the forest, you cannot go there, but you can see this forest fr
     - You start with 100 lives, and the game ends if you lose them all.
     If you died you will see such menu:
     ![Menu](images/menu_lost.png)
+    - Here you can see how to play in a night mode:
+![Play Night Mode](images/Night.mp4)
 
 - **Skeleton Animation and Sound:**
   - The skeleton features animations for idle and walking.
