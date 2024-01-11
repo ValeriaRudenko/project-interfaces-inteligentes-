@@ -96,6 +96,9 @@ The school is in the forest, you cannot go there, but you can see this forest fr
 ## Enhanced Player Controls:
 - Quick Run: Speed up movement by pressing the Shift key.
 
+## You can game our game using Joystick
+![Joystick](images/game_control.png)
+
 ## Group agreements
 ### Tasks Developed in Group
 
