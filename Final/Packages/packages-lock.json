@@ -10,6 +10,15 @@
       },
       "hash": "cb0acecbe258f68a872ced2120fb20dfc79d59e8"
     },
+    "com.unity.ads": {
+      "version": "4.4.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 0,
